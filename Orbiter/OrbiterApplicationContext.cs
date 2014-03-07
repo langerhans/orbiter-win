@@ -47,7 +47,7 @@ namespace Orbiter
 
             foreach (String file in mWalletFiles)
             {
-                ToolStripMenuItem item = new ToolStripMenuItem(file);
+                ToolStripMenuItem item = new ToolStripMenuItem(file.Substring(0, file.LastIndexOf('.')));
                 item.Click += (sender, e) => loadWallet(file, item);
                 mContextMenu.Items.Add(item);
             }
