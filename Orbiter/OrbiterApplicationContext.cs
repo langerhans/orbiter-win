@@ -151,7 +151,7 @@ namespace Orbiter
             fbd.Description = Strings.promptDataDir;
             if (fbd.ShowDialog() == DialogResult.OK)
             {
-                if (File.Exists(Path.Combine(fbd.SelectedPath, "blkindex.dat"))) // Assume a valid dataDir has that file
+                if (File.Exists(Path.Combine(fbd.SelectedPath, "peers.dat"))) // Assume a valid dataDir has that file
                 {
                     Settings.Default.dogecoinDir = fbd.SelectedPath;
                     Settings.Default.Save();
