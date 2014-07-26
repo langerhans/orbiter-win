@@ -178,8 +178,8 @@ namespace Orbiter
 
         private void loadWallet(String file, ToolStripMenuItem item)
         {
-            item.Checked = true;
-            file = file.Substring(0, file.LastIndexOf('.'));
+            //item.Checked = true;
+            //file = file.Substring(0, file.LastIndexOf('.'));
 
             Process runningProcess = isDogecoinRunning();
             if (runningProcess != null)
